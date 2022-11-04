@@ -347,27 +347,9 @@ a {
   fill: var(--main-color);
 }
 
-/* .benefits-list .item {
+.benefits-list .item {
   flex-basis: calc((100% - 90px) / 4);
-} */
-
-/* .benefits-list .item::before {
-  content: '';
-  display: block;
-  height: 120px;
-
-  margin-bottom: 30px;
-
-  background: #f5f4fa;
-  border-radius: 4px;
 }
-
-.benefits-list .item:nth-child(1)::before {
-  background-image: url(../images/antenna.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position-x: center;
-} */
 
 /* -----------ACTIVITY------------- */
 
@@ -397,9 +379,13 @@ a {
   flex-basis: calc((100% - 60px) / 3);
 }
 
-.activity-list {
-  display: flex;
-}
+/* .activity-list-img {
+  position: relative;
+} */
+
+/* .activity-list-text {
+  position: absolute;
+} */
 
 /* -------------TEAM------------ */
 
