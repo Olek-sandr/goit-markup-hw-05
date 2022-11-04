@@ -129,18 +129,22 @@ a {
 .site-nav {
   display: flex;
   margin-left: 93px;
+
+  gap: 50px;
 }
 
 .auth-nav {
   display: flex;
   margin-left: auto;
   align-items: baseline;
+
+  gap: 50px;
 }
 
-.site-nav .item + .item,
+/* .site-nav .item + .item,
 .auth-nav .item + .item {
   margin-left: 50px;
-}
+} */
 
 .page-header {
   color: var(--white);
@@ -539,11 +543,12 @@ a {
   justify-content: center;
 
   margin-bottom: 50px;
+  gap: 8px;
 }
 
-.button-list .item + .item {
+/* .button-list .item + .item {
   margin-left: 8px;
-}
+} */
 
 /* projects-list*/
 
