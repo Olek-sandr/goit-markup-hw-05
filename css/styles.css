@@ -21,8 +21,7 @@
 }
 
 /* ------Body----- */
-
-a {
+.link {
   text-decoration: none;
 }
 
@@ -62,8 +61,7 @@ a {
   letter-spacing: 0.03em;
 }
 
-.container,
-.container-header {
+.container {
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
@@ -77,6 +75,14 @@ a {
 }
 
 /* -------Header--------- */
+.container-header {
+  display: flex;
+  align-items: center;
+}
+
+.nav-header {
+  display: flex;
+}
 
 .logo,
 .footer-logo {
@@ -89,6 +95,8 @@ a {
 
 .logo {
   color: #000000;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 
 .logo-style {
