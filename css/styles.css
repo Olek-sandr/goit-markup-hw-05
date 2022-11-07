@@ -599,20 +599,10 @@ img {
 
   font-size: 16px;
   line-height: 1.87;
-
-  /* margin-left: calc(-1 * var(--card-set-gap2));
-    margin-top: calc(-1 * var(--card-set-gap2)); */
 }
 
 .card-set > .item {
   flex-basis: calc((100% - 60px) / 3);
-
-  /* margin-left: var(--card-set-gap2);
-    margin-top: var(--card-set-gap2); */
-
-  /* margin: 0;
-    padding: 0;
-    list-style: none; */
 }
 
 .card-set > .item:hover,
