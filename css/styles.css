@@ -23,6 +23,9 @@
 /* ------Body----- */
 .link {
   text-decoration: none;
+  transition-property: color, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .list {
@@ -74,6 +77,11 @@
   align-items: center;
 }
 
+button {
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 /* -------Header--------- */
 .container-header {
   display: flex;
@@ -439,7 +447,7 @@
 }
 
 .team-card .title,
-.team-card p {
+.team-card .text {
   margin-top: 0;
   margin-bottom: 10px;
 
@@ -577,12 +585,7 @@
   gap: 8px;
 }
 
-/* .button-list .item + .item {
-  margin-left: 8px;
-} */
-
 /* ------------projects-list-----------*/
-
 img {
   display: block;
   height: auto;
@@ -693,7 +696,7 @@ img {
   opacity: 1;
 } */
 
-/* .card-set .link {
+.card-set .link {
   position: relative;
 }
 
@@ -715,7 +718,7 @@ img {
   height: 168px;
   width: 322px;
 
-  opacity: 0;
+  opacity: ;
 }
 
 .card-thumb::before {
@@ -726,9 +729,9 @@ img {
   background-color: rgba(33, 150, 243, 0.9);
 
   position: absolute;
-  opacity: 0;
+  opacity: ;
 }
 
 .card-thumb {
   position: relative;
-} */
+}
