@@ -4,7 +4,7 @@
 /* Second color text #757575; */
 /* accent #2196F3; */
 /* white #FFFFFF; */
-/* rgba white rgba(255, 255, 255, 0.6); */
+/* rgba-white rgba(255, 255, 255, 0.6); */
 /* background color: #FFFFFF; */
 /* Footer and hero background color: #2F303A; */
 /* Second background color: #F5F4FA; */
@@ -18,30 +18,53 @@
   --card-set-gap: 30px;
   --card-set-gap2: 20px;
   --social-list-gap: 10px;
+  --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* ------Body----- */
-.client-link,
 /* !---------------------------------------------------------------------- */
+.card-link,
+.client-link,
 .social-link,
 .container-header .link,
 .address .link {
-  transition-property: color, background-color;
-  transition-duration: 1000ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms var(--timing-function);
+}
+
+.social-link {
+  transition-property: background-color;
+}
+
+.client-link {
+  transition-property: border, color;
 }
 
 .card-link {
+  display: block;
   transition-property: box-shadow;
-  transition-duration: 1000ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+/* !---------------------------------------------------------------------- */
+.body {
+  color: var(--main-color);
+  background-color: var(--white);
+
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.03em;
 }
 
-/* .client-link {
-  transition-property: color, background-color;
-  transition-duration: 1000ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-} */
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 1200px;
+}
+
+.container-header {
+  display: flex;
+  align-items: center;
+}
 
 .link {
   text-decoration: none;
@@ -74,34 +97,16 @@
   margin: -1px;
 }
 
-.body {
-  color: var(--main-color);
-  background-color: var(--white);
-
-  font-family: 'Roboto', sans-serif;
-  font-size: 14px;
-  letter-spacing: 0.03em;
-}
-
-.container {
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-  width: 1200px;
-}
-
-.container-header {
-  display: flex;
-  align-items: center;
+img {
+  display: block;
+  height: auto;
+  width: 100%;
 }
 
 button {
-  transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms var(--timing-function);
 }
-/* -------Header--------- */
+/* -------------------------------Header------------------------------- */
 .container-header {
   display: flex;
   align-items: center;
@@ -191,11 +196,6 @@ button {
   gap: 50px;
 }
 
-/* .site-nav .item + .item,
-.auth-nav .item + .item {
-  margin-left: 50px;
-} */
-
 .page-header {
   color: var(--white);
   border: 1px solid #ececec;
@@ -211,7 +211,7 @@ button {
   color: var(--accent);
 } */
 
-/* --------Footer---------- */
+/* -------------------------------Footer------------------------------- */
 
 .footer {
   padding-top: 60px;
@@ -262,7 +262,7 @@ button {
   width: 231px;
 }
 
-/* -------Social-footer------- */
+/* -------------------------------Social-footer------------------------------- */
 
 .social-footer {
   display: inline-block;
@@ -285,10 +285,10 @@ button {
   margin-bottom: 20px;
 }
 
-/* STUSIO */
-/* Main */
+/* -------------------------------MAIN------------------------------- */
+/* ?-------------------------------STUSIO------------------------------- */
 
-/* ----------------HERO----------------- */
+/* -------------------------------HERO------------------------------- */
 
 .overlay {
   margin-left: auto;
@@ -605,12 +605,6 @@ button {
 }
 
 /* ------------projects-list-----------*/
-img {
-  display: block;
-  height: auto;
-  width: 100%;
-}
-
 .card-set {
   display: flex;
   flex-wrap: wrap;
@@ -624,8 +618,8 @@ img {
   flex-basis: calc((100% - 60px) / 3);
 }
 
-.card-set > .item:hover,
-.card-set > .item:focus {
+.card-link:hover,
+.card-link:focus {
   box-shadow: 1px 4px 6px 0px #00000029, 0px 4px 4px 0px #0000000f, 0px 1px 1px 0px #0000001f;
 }
 
@@ -729,7 +723,6 @@ img {
   transform: translateY(100%);
 
   background-color: rgba(33, 150, 243, 0.9);
-  opacity: ;
 
   transition-property: transform;
   transition-duration: 250ms;
