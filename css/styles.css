@@ -21,11 +21,30 @@
 }
 
 /* ------Body----- */
+.client-link,
+/* !---------------------------------------------------------------------- */
+.social-link,
+.container-header .link,
+.address .link {
+  transition-property: color, background-color;
+  transition-duration: 1000ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card-link {
+  transition-property: box-shadow;
+  transition-duration: 1000ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* .client-link {
+  transition-property: color, background-color;
+  transition-duration: 1000ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+} */
+
 .link {
   text-decoration: none;
-  transition-property: color, background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .list {
@@ -661,6 +680,10 @@ img {
   width: 322px;
 
   opacity: 0;
+
+  transition-property: background-color, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .card-thumb::before {
@@ -672,6 +695,10 @@ img {
 
   position: absolute;
   opacity: 0;
+
+  transition-property: background-color, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .card-thumb {
@@ -682,3 +709,53 @@ img {
 .card-link:hover .card-thumb-text {
   opacity: 1;
 } */
+
+.card-link:hover .card-thumb::before,
+.card-link:hover .card-thumb-text {
+  transform: translateY(0);
+}
+
+.card-thumb {
+  position: relative;
+  overflow: hidden;
+}
+
+.card-thumb::before {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+
+  transform: translateY(100%);
+
+  background-color: rgba(33, 150, 243, 0.9);
+  opacity: ;
+
+  transition-property: transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card-thumb-text {
+  color: var(--white);
+
+  height: 168px;
+  width: 322px;
+
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.55;
+
+  margin: 63px 24px;
+
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+
+  transform: translateY(294px);
+
+  transition-property: transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
