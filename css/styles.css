@@ -164,11 +164,15 @@ button {
 
 .site-nav .current {
   position: relative;
-
   color: var(--accent);
 }
 
 .site-nav .current::after {
+  position: absolute;
+  content: '';
+  bottom: 0;
+  left: 0;
+
   content: '';
   width: 100%;
   height: 4px;
@@ -431,18 +435,16 @@ button {
 }
 
 .activity-list-item {
-  flex-basis: calc((100% - 60px) / 3);
-
   position: relative;
+  flex-basis: calc((100% - 60px) / 3);
 }
 
 .activity-container-item-text {
-  background-color: rgba(47, 48, 58, 0.8);
-
   position: absolute;
+  bottom: 0;
+
   width: 100%;
   left: 0;
-  bottom: 0;
 
   padding-top: 27px;
   padding-bottom: 27px;
@@ -450,6 +452,8 @@ button {
   font-weight: bold;
   font-size: 14px;
   line-height: 1.14;
+
+  background-color: rgba(47, 48, 58, 0.8);
 }
 
 .activity-item-text {
@@ -717,20 +721,24 @@ button {
 .card-thumb::before {
   position: absolute;
   content: '';
+
   width: 100%;
   height: 100%;
 
   transform: translateY(100%);
 
-  background-color: rgba(33, 150, 243, 0.9);
-
   transition-property: transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  background-color: rgba(33, 150, 243, 0.9);
 }
 
 .card-thumb-text {
-  color: var(--white);
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
 
   height: 168px;
   width: 322px;
@@ -741,10 +749,7 @@ button {
 
   margin: 63px 24px;
 
-  position: absolute;
-  content: '';
-  top: 0;
-  left: 0;
+  color: var(--white);
 
   transform: translateY(294px);
 
