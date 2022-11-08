@@ -96,7 +96,7 @@
   clip-path: inset(50%);
   margin: -1px;
 }
-
+/* !-----------------------------backdrop----------------------------- */
 .backdrop {
   position: fixed;
   top: 0;
@@ -107,7 +107,7 @@
   background-color: #00000033;
 }
 
-.modal {
+.backdrop-modal {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -119,6 +119,20 @@
   border-radius: 4px;
   background-color: var(--white);
 }
+
+.backdrop-modal-button {
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  top: 8px;
+  right: 8px;
+
+  border-radius: 50%;
+  border: 1px solid #0000001a;
+
+  background-color: var(--white);
+}
+/* !-----------------------------backdrop-end----------------------------- */
 
 img {
   display: block;
