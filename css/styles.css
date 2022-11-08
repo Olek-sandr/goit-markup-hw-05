@@ -120,18 +120,32 @@
   background-color: var(--white);
 }
 
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
 .backdrop-modal-button {
   position: absolute;
-  height: 30px;
-  width: 30px;
   top: 8px;
   right: 8px;
+
+  height: 30px;
+  width: 30px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   border-radius: 50%;
   border: 1px solid #0000001a;
 
   background-color: var(--white);
 }
+
+.backdrop-modal-icon {
+}
+
 /* !-----------------------------backdrop-end----------------------------- */
 
 img {
@@ -246,6 +260,11 @@ button {
   fill: currentColor;
   margin-right: 10px;
 }
+
+/* .page-header {
+  position: fixed;
+  width: 100%;
+} */
 
 /* .contact-icon:hover,
 .contact-icon:focus {
