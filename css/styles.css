@@ -252,7 +252,7 @@ button {
 }
 
 .page-header {
-  color: var(--white);
+  background-color: var(--white);
   border: 1px solid #ececec;
 }
 
@@ -261,10 +261,12 @@ button {
   margin-right: 10px;
 }
 
-/* .page-header {
+.page-header {
   position: fixed;
   width: 100%;
-} */
+
+  z-index: 1;
+}
 
 /* .contact-icon:hover,
 .contact-icon:focus {
