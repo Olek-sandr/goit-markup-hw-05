@@ -27,7 +27,8 @@
 .client-link,
 .social-link,
 .container-header .link,
-.address .link {
+.address .link,
+button {
   transition: color 250ms var(--timing-function);
 }
 
@@ -43,6 +44,10 @@
   display: block;
   transition-property: box-shadow;
 }
+
+button {
+  transition-property: background-color, box-shadow;
+}
 /* !---------------------------------------------------------------------- */
 .body {
   color: var(--main-color);
@@ -51,6 +56,8 @@
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
   letter-spacing: 0.03em;
+
+  padding-top: 85px;
 }
 
 .container {
@@ -154,9 +161,6 @@ img {
   width: 100%;
 }
 
-button {
-  transition: background-color 250ms var(--timing-function);
-}
 /* -------------------------------Header------------------------------- */
 .container-header {
   display: flex;
@@ -264,6 +268,7 @@ button {
 .page-header {
   position: fixed;
   width: 100%;
+  top: 0;
 
   z-index: 1;
 }
