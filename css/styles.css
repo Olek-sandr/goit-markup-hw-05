@@ -289,12 +289,12 @@ button {
   line-height: 1.7;
 }
 
-.address .first-link {
-  color: #fff;
-}
-
 .address .link {
   color: rgba(255, 255, 255, 0.6);
+}
+
+.address .first-link {
+  color: #fff;
 }
 
 .address .link:hover,
