@@ -46,6 +46,14 @@ button {
 }
 
 button {
+  font-size: 16px;
+  border-radius: 4px;
+  border: none;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  color: var(--white);
+
   transition-property: background-color, box-shadow;
 }
 /* !---------------------------------------------------------------------- */
@@ -328,31 +336,64 @@ img {
 }
 
 .container-logo-address {
-  margin-right: 70px;
   width: 231px;
 }
 
-/* -------------------------------Social-footer------------------------------- */
+/* -------------------------------Container-Social-footer------------------------------- */
 
-.social-footer {
+.container-social-footer {
   display: inline-block;
   align-items: flex-start;
+
+  margin-left: 70px;
 }
 
-.social-footer .social-link {
+.container-social-footer .social-link {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-.social-footer .social-icon {
+.container-social-footer .social-icon {
   fill: var(--white);
 }
 
-.social-footer .text {
+.container-social-footer .social-text {
   display: block;
   text-transform: uppercase;
   color: var(--white);
 
   margin-bottom: 20px;
+}
+
+/* -------------------------------container-footer-form------------------------------- */
+
+.container-footer-form {
+  margin-left: 93px;
+}
+.footer-form-uptext {
+  display: block;
+  text-transform: uppercase;
+  color: var(--white);
+
+  margin-bottom: 20px;
+}
+
+.footer-form {
+}
+
+.footer-form-placeholder {
+}
+
+.footer-form-button {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 28px;
+  padding-right: 62px;
+
+  background-color: var(--accent);
+}
+
+.footer-form-button:hover {
+  background-color: #188ce8;
 }
 
 /* -------------------------------MAIN------------------------------- */
@@ -401,20 +442,15 @@ img {
   /* display: inline-block; */
   min-width: 216px;
   padding: 10px 32px;
-  border-radius: 4px;
   text-align: center;
   align-items: center;
-  border: none;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 
-  font-family: inherit;
   font-weight: 700;
-  font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
 
   background: #2196f3;
-  color: var(--white);
 }
 
 .button-hero:hover,
@@ -646,13 +682,10 @@ img {
 
 .filtr-button {
   padding: 6px 22px;
-  border-radius: 4px;
-  border: none;
 
+  color: var(--main-color);
   font-family: inherit;
-  cursor: pointer;
   font-weight: 500;
-  font-size: 16px;
   line-height: 1.6;
   text-align: center;
   letter-spacing: 0.03em;
