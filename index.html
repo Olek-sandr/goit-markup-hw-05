@@ -427,8 +427,8 @@
           <form class="footer-form">
             <input
               class="footer-form-placeholder"
-              type="email"
-              name="email"
+              type="mail"
+              name="mail"
               placeholder="E-mail"
               id=""
             />
@@ -440,11 +440,48 @@
 
     <div class="backdrop is-hidden" data-modal>
       <div class="backdrop-modal">
-        <button type="button" class="backdrop-modal-button" data-modal-close>
-          <svg class="backdrop-modal-icon" width="11" height="11">
+        <button type="button" class="backdrop-modal-close-button" data-modal-close>
+          <svg class="backdrop-modal-close-icon" width="11" height="11">
             <use href="./images/icons-svg.svg#icon-cross-button"></use>
           </svg>
         </button>
+        <b>Залиште свої дані, ми вам передзвонимо</b>
+        <form class="subscribe">
+          <div class="subscribe-form-field">
+            <input type="text" name="mame" id="name" />
+            <label for="name">Ім'я</label>
+            <!-- <svg>
+              <use></use>
+            </svg> -->
+          </div>
+          <div class="subscribe-form-field">
+            <input type="text" name="tel" id="tel" />
+            <label for="tel">Телефон</label>
+            <!-- <svg>
+              <use></use>
+            </svg> -->
+          </div>
+          <div class="subscribe-form-field">
+            <input type="text" name="mail" id="mail" />
+            <label for="mail">Пошта</label>
+            <!-- <svg>
+              <use></use>
+            </svg> -->
+          </div>
+          <div class="subscribe-form-field">
+            <label for="comment">Коментар</label>
+            <textarea placeholder="Введіть текст" name="comment" id="comment" rows="8"> </textarea>
+          </div>
+
+          <div class="subscribe-form-field">
+            <input type="checkbox" name="conditions" value="conditions" id="conditions" />
+            <label for="conditions"
+              >Погоджуюся з розсилкою та приймаю Умови договору
+              <a href="#m">Умови договору</a></label
+            >
+          </div>
+        </form>
+        <button class="subscrib-button" type="submit">Відправити</button>
       </div>
     </div>
 

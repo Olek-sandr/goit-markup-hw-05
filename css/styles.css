@@ -149,7 +149,7 @@ button {
   transform: translate(-50%, -50%) scale(0.5) rotate(180deg);
 }
 
-.backdrop-modal-button {
+.backdrop-modal-close-button {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -167,7 +167,22 @@ button {
   background-color: var(--white);
 }
 
-.backdrop-modal-icon {
+.backdrop-modal-close-icon {
+}
+
+.subscribe {
+}
+.subscribe-form-field {
+}
+.subscrib-button {
+  background-color: var(--accent);
+
+  height: 50px;
+  width: 200px;
+}
+.subscrib-button:hover {
+  background-color: #188ce8;
+  box-shadow: 0px 4px 4px 0px #00000026;
 }
 
 /* !-----------------------------backdrop-end----------------------------- */
@@ -408,6 +423,7 @@ img {
 
 .footer-form-button:hover {
   background-color: #188ce8;
+  box-shadow: 0px 4px 4px 0px #00000026;
 }
 
 /* -------------------------------MAIN------------------------------- */
