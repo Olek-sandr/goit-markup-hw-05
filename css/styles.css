@@ -380,6 +380,18 @@ img {
 .footer-form {
 }
 
+.footer-form input {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 16px;
+
+  background-color: #2196f300;
+  color: #ffffff4d;
+
+  border: 1px solid #ffffff4d;
+  border-radius: 4px;
+}
+
 .footer-form-placeholder {
 }
 
@@ -388,6 +400,8 @@ img {
   padding-bottom: 10px;
   padding-left: 28px;
   padding-right: 62px;
+  line-height: 1.6;
+  letter-spacing: 0, 6;
 
   background-color: var(--accent);
 }
