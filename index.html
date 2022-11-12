@@ -445,41 +445,38 @@
             <use href="./images/icons-svg.svg#icon-cross-button"></use>
           </svg>
         </button>
-        <b>Залиште свої дані, ми вам передзвонимо</b>
-        <form class="subscribe">
+        <b class="subscribe-form-uptext">Залиште свої дані, ми вам передзвонимо</b>
+        <form class="subscribe-form">
           <div class="subscribe-form-field">
-            <input type="text" name="mame" id="name" />
             <label for="name">Ім'я</label>
+            <input type="text" name="mame" id="name" />
             <!-- <svg>
               <use></use>
             </svg> -->
           </div>
           <div class="subscribe-form-field">
-            <input type="text" name="tel" id="tel" />
             <label for="tel">Телефон</label>
+            <input type="text" name="tel" id="tel" />
             <!-- <svg>
               <use></use>
             </svg> -->
           </div>
           <div class="subscribe-form-field">
-            <input type="text" name="mail" id="mail" />
             <label for="mail">Пошта</label>
+            <input type="text" name="mail" id="mail" />
             <!-- <svg>
               <use></use>
             </svg> -->
           </div>
           <div class="subscribe-form-field">
             <label for="comment">Коментар</label>
-            <textarea placeholder="Введіть текст" name="comment" id="comment" rows="8"> </textarea>
+            <textarea placeholder="Введіть текст" name="comment" id="comment" rows="7"> </textarea>
           </div>
 
-          <div class="subscribe-form-field">
-            <input type="checkbox" name="conditions" value="conditions" id="conditions" />
-            <label for="conditions"
-              >Погоджуюся з розсилкою та приймаю Умови договору
-              <a href="#m">Умови договору</a></label
-            >
-          </div>
+          <input type="checkbox" name="conditions" value="conditions" id="conditions" />
+          <label for="conditions"
+            >Погоджуюся з розсилкою та приймаю <a href="#m">Умови договору</a></label
+          >
         </form>
         <button class="subscrib-button" type="submit">Відправити</button>
       </div>

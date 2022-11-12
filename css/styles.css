@@ -170,12 +170,63 @@ button {
 .backdrop-modal-close-icon {
 }
 
-.subscribe {
+.subscribe-form {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  width: 448px;
+  /* outline: 1px solid blue; */
+}
+
+.subscribe-form-uptext {
+  display: flex;
+  justify-content: center;
+
+  margin-bottom: 12px;
+  margin-top: 40px;
+
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.15;
+  text-align: center;
 }
 .subscribe-form-field {
+  display: flex;
+  flex-direction: column;
+
+  margin-bottom: 10px;
+
+  /* outline: 1px solid red; */
 }
+
+.subscribe-form-field textarea {
+  resize: none;
+
+  border: 1px solid #21212133;
+  border-radius: 4px;
+}
+
+.subscribe-form-field input {
+  padding: 15px 14px;
+  border: 1px solid #21212133;
+  border-radius: 4px;
+}
+
+.subscribe-form-field label {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+
+  margin-bottom: 4px;
+
+  color: var(--second-color);
+}
+
 .subscrib-button {
   background-color: var(--accent);
+
+  margin-left: 164px;
 
   height: 50px;
   width: 200px;
